@@ -38,11 +38,11 @@ class Queue {
   }
 
   dequeue() {
-    const cur = this.top;
+    const current = this.top;
     this.top = this.top.next;
     this.length--;
-    cur.next = null;
-    return cur.value;
+    current.next = null;
+    return current.value;
   }
 
 }
